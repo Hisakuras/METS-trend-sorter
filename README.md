@@ -4,6 +4,16 @@
 
 **M**in-**M**ax-**E**xtreme **T**rend **S**orter — a lightweight algorithm for ranking many time series by overall trend, with honest, fully reproducible experimental evaluation.
 
+## Results at a glance
+
+**Real-world validation (6 datasets)** — direction consistency, significance agreement with Mann-Kendall, and ranking consistency vs. Theil-Sen:
+
+![Real-world validation across 6 datasets](docs/fig5_real_data.png)
+
+**Noise robustness comparison** (METS vs OLS vs Theil-Sen vs Base-Extreme):
+
+![Noise robustness](docs/fig1_noise_robustness.png)
+
 ## Why this exists
 
 Ranking hundreds of time series (stocks, sensors, climate stations) by trend strength is a common task. Existing approaches face a trade-off:
