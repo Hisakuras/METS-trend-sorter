@@ -1,0 +1,6 @@
+dataset,source,business_task,unit_of_analysis,label_type,primary_metrics
+NAB,https://github.com/numenta/NAB,streaming anomaly early warning,time-series stream,anomaly windows,NAB score; lead time; false alarms; Top-K recall
+NASA C-MAPSS,https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data,engine degradation sensor ranking,engine-sensor trajectory,run-to-failure,Top-K hit rate; warning lead; false positive rate
+NASA PCoE battery,https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/,capacity degradation and lifetime risk ranking,battery capacity-cycle series,eventual lifetime,Spearman/Kendall; Top-10% recall; interval coverage
+UCI household power,https://dev.uci-ics-mlr-prod.aws.uci.edu/dataset/235/individual%2Bhousehold%2Belectric%2Bconsumption,energy trend and anomaly screening,day or household window,constructed audit labels,Top-K hit rate; false alarms; review yield
+
