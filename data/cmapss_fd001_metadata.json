@@ -1,0 +1,22 @@
+{
+  "dataset": "NASA C-MAPSS FD001",
+  "source_primary": "https://data.nasa.gov/dataset/cmapss-jet-engine-simulated-data",
+  "mirror_used": "https://github.com/huster123/c-mapss-full-dataset-",
+  "train_units": 100,
+  "cutoffs": [
+    50,
+    80
+  ],
+  "folds": 3,
+  "seed": 20260812,
+  "scale": "fleet MAD from training fold",
+  "methods": [
+    "OLS",
+    "global Theil-Sen",
+    "METS-SI center=local Theil-Sen median; width=Q90-Q10"
+  ],
+  "note": "This is a sensor-selection proxy task, not an RUL predictor.",
+  "train_FD001.txt_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+  "test_FD001.txt_sha256": "3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851",
+  "RUL_FD001.txt_sha256": "a19c8ec94931949d0485bdc35118206e9c81c4547b422efb9cf86f4ceddbceca"
+}
